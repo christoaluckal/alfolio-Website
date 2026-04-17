@@ -4,11 +4,11 @@
       <div class="row no-gutters">
         {% assign project_image = project.card_img | default: 'assets/img/projects/default-project.jpg' %}
         {% if project_image %}
-          <div class="col-md-6">
+          <div class="col-md-4">
             {% include figure.liquid loading="eager" path=project_image sizes="(min-width: 768px) 280px, 50vw" alt="project thumbnail" class="card-img" %}
           </div>
         {% endif %}
-        <div class="{% if project_image %}col-md-6{% else %}col-md-12{% endif %}">
+        <div class="{% if project_image %}col-md-8{% else %}col-md-12{% endif %}">
           <div class="card-body">
             <h3 class="card-title">{{ project.title }}</h3>
             <p class="card-text">{{ project.description }}</p>
