@@ -4,20 +4,20 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "Selected publications and papers.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
@@ -80,7 +80,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%63%68%72%69%73%74%6F%61%6C%75%63%6B%61%6C.%77%6F%72%6B@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%63%68%72%69%73%74%6F%61@%62%75%66%66%61%6C%6F.%65%64%75", "_blank");
         },
       },{
         id: 'social-github',
