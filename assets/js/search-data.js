@@ -45,7 +45,7 @@ ninja.data = [{
               window.location.href = "/projects/npnt/";
             },},{id: "projects-pixtrigger",
           title: 'PixTrigger',
-          description: "Open source camera triggering and geotagging tool built around Pixhawk and Raspberry Pi.",
+          description: "Camera triggering and geotagging tool for Pixhawk and Raspberry Pi workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pixtrigger/";
             },},{id: "projects-reinforcement-learning-distillation",
