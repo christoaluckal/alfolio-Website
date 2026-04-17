@@ -3,6 +3,7 @@ layout: page
 title: Building Segmentation
 description: Extracting building coordinates and heights from orthomosaic and DEM data.
 img: assets/img/projects/elevation.png
+card_img: assets/img/projects/elevation.png
 importance: 8
 github: https://github.com/christoaluckal/elevation-infer
 related_publications: false

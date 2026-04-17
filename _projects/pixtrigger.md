@@ -3,6 +3,7 @@ layout: page
 title: PixTrigger
 description: Open source camera triggering and geotagging tool built around Pixhawk and Raspberry Pi.
 img: assets/img/projects/elevation.png
+card_img: assets/img/projects/elevation.png
 importance: 6
 github: https://github.com/InfiCorridor-Solutions/PixTrigger
 related_publications: false

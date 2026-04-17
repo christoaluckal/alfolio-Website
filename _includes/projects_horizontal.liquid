@@ -2,7 +2,7 @@
   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     <div class="card h-100 hoverable">
       <div class="row no-gutters">
-        {% assign project_image = project.img | default: 'assets/img/projects/default-project.jpg' %}
+        {% assign project_image = project.card_img | default: 'assets/img/projects/default-project.jpg' %}
         {% if project_image %}
           <div class="col-md-6">
             {% include figure.liquid loading="eager" path=project_image sizes="(min-width: 768px) 280px, 50vw" alt="project thumbnail" class="card-img" %}
@@ -24,6 +24,13 @@
                       <span id="{{ project.github_stars }}-stars"></span>
                     </span>
                   {% endif %}
+                </div>
+              {% endif %}
+              {% if project.pdf %}
+                <div class="github-icon">
+                  <div class="icon" data-toggle="tooltip" title="Project Document">
+                    <a href="{{ project.pdf | relative_url }}"><i class="fa-solid fa-file-lines gh-icon"></i></a>
+                  </div>
                 </div>
               {% endif %}
             </div>

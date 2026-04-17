@@ -3,7 +3,9 @@ layout: page
 title: Hex-Wife
 description: Hex-rotor UAV platform for autonomous point-to-point missions.
 img: assets/img/projects/hex-wife.jpg
+card_img: assets/img/projects/hex-wife.jpg
 importance: 5
+pdf: /assets/pdf/mavericks-uas-suas-report.pdf
 related_publications: false
 ---
 
@@ -20,4 +22,4 @@ At AUVSI SUAS 2019, the team received the [Just Joe Sportsmanship Award](https:/
 
 ## Links
 
-- Report: [Mavericks UAS SUAS report](/assets/pdf/mavericks-uas-suas-report.pdf)
+[SUAS Report](/assets/pdf/mavericks-uas-suas-report.pdf)

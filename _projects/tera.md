@@ -3,6 +3,7 @@ layout: page
 title: TERA
 description: Simulation environment for terrain excavation robot autonomy.
 img: assets/img/tera.png
+card_img: assets/img/tera.png
 importance: 2
 redirect: https://droneslab.github.io/tera/
 related_publications: true

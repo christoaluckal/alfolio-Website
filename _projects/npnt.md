@@ -3,6 +3,7 @@ layout: page
 title: No Permission, No Take-Off
 description: XML signature authentication tool built with OpenSSL.
 img: assets/img/projects/npnt.png
+card_img: assets/img/projects/npnt.png
 importance: 7
 github: https://github.com/christoaluckal/NPNT_OpenSSL
 related_publications: false
