@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PixTrigger
-description: Open source camera triggering and geotagging tool built around Pixhawk and Raspberry Pi.
+description: Camera triggering and geotagging tool for Pixhawk and Raspberry Pi workflows.
 img: assets/img/projects/elevation.png
 card_img: assets/img/projects/elevation.png
 importance: 6
