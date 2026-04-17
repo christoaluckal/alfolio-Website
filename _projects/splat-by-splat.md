@@ -18,8 +18,7 @@ Splat-by-Splat explores progressive Gaussian Splatting for more efficient scene 
 
 ## Links
 
-- Code: [christoaluckal/gaussian-splatting](https://github.com/christoaluckal/gaussian-splatting)
-- Abstract: [Project abstract](/assets/pdf/splat.pdf)
+[Code](https://github.com/christoaluckal/gaussian-splatting) | [Abstract](/assets/pdf/splat.pdf)
 
 ## Results
 

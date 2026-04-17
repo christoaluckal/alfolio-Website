@@ -41,7 +41,12 @@ ul.task-list input[type="checkbox"] {
 
   .card-img {
     width: 100%;
-    padding-top: 1.25rem;
+    height: 100%;
+    min-height: 220px;
+    max-height: 220px;
+    padding-top: 0;
+    object-fit: cover;
+    object-position: center;
   }
 
   .card-title {
@@ -139,6 +144,11 @@ ul.task-list input[type="checkbox"] {
     img {
       width: 100%;
     }
+  }
+
+  .card figure {
+    height: 100%;
+    margin-bottom: 0;
   }
 
   .col {
