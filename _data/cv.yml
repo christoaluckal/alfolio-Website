@@ -1,189 +1,236 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  name: Christo Aluckal
+  label: Graduate Research Assistant / PhD Candidate
+  email: christoa@buffalo.edu
+  phone: "+1-716-344-0215"
+  website: https://christoaluckal.com
+  location: Buffalo, New York, United States
+  summary: I focus on creating adaptive and practical tools that make robotic autonomy more robust, deployable, and impactful across real-world applications.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: christoaluckal
     - network: LinkedIn
-      username: example
+      username: christo-aluckal-765062201
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    city: Buffalo
+    region: New York
+    postalCode: "14208"
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University at Buffalo
+        location: Buffalo, United States
+        area: Computer and Information Science
+        studyType: Doctor of Philosophy
+        start_date: 2025
+        end_date: Present
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: University at Buffalo
+        location: Buffalo, United States
+        area: Computer and Information Science
+        studyType: Master of Science
+        start_date: 2022
+        end_date: 2025
         highlights:
-          - Description 1.
-          - Description 2.
+          - "GPA: 3.53/4.00"
+          - "Relevant Courses: Machine Learning, Reinforcement Learning, Robotics Algorithms, Computer Vision and Image Processing, Learning for Autonomous Systems"
+
+      - institution: Mumbai University
+        location: Mumbai, India
+        area: Computer Engineering
+        studyType: Bachelor of Engineering
+        start_date: 2016
+        end_date: 2021
+        highlights:
+          - "Grade: 8.44/10.00"
+          - "Relevant Courses: Machine Learning, Digital Signal and Image Processing"
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: DRONESLab
+        position: Graduate Research Assistant / PhD Candidate
+        location: Buffalo, United States
+        start_date: 2022
+        end_date: Present
         highlights:
-          - Relativity
-          - Description 2.
+          - Developed TERA, a ROS-based simulation framework in Unity3D for autonomous excavators with customizable hardware parameters and sensor specifications.
+          - Created a ROS wrapper for low-level excavator control to enable autonomous operation.
+          - Developed an incremental training strategy for 3D Gaussian Splatting that enabled real-time, memory-efficient scene reconstruction on edge and low-power devices with a 33 percent reduction in training time.
+          - Assisted in developing software for autonomous inspection in low-light environments such as culverts.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: InfiCorridor Solutions Pvt. Ltd.
+        position: Intern / Part-Time
+        location: Mumbai, India
+        start_date: 2020
+        end_date: 2022
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - Developed PixTrigger, an open source framework for capturing and geotagging images, interfaceable with more than 100 cameras in Python and C/C++.
+          - Developed the No Permission No Take-off system in C/C++ to verify digital signatures in compliance with Directorate General of Civil Aviation standards.
+          - Audited, validated, and improved data workflows for GIS applications.
+          - Planned and executed autonomous UAV missions to generate imagery and maps for Digital Elevation and Terrain Models.
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: "Master's Thesis: TERA: Simulation Environment for Terrain Excavation Robot Autonomy"
+        summary: "Tools: Unity, C#, ROS"
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Designed TERA, a simulator supporting real-time operation and high-fidelity modeling of autonomous excavators and terrain interaction.
+          - Incorporated time-varying dynamics to study the challenges of full excavation autonomy.
+          - Enabled users to spawn multiple sensors including cameras, IMUs, and LiDARs with configurable characteristics.
+          - Validated the simulator with track deformation, velocity profile, and real-to-sim similarity scenarios for systematic evaluation of excavation autonomy algorithms.
+        start_date: 2024
+        end_date: 2025
+
+      - name: "Splat-by-Splat: Progressive Gaussian Splatting for Efficient Scene Reconstruction"
+        summary: "Tools: Python, PyTorch, CUDA, COLMAP"
+        highlights:
+          - Proposed an incremental training strategy for 3D Gaussian Splatting to overcome memory and compute limitations of full-dataset training.
+          - Developed a partitioning algorithm that splits a COLMAP scene into user-defined chunks sequentially or based on geometric constraints.
+          - Built a sequential dataset integration approach for real-time scene reconstruction on edge and low-power devices.
+          - Extended the original 3DGS implementation to support incremental updates to the training dataset.
+        start_date: 2024
+        end_date: 2025
+
+      - name: Learning Visual Information Utility with PIXER
+        summary: "Tools: Python, BNNs, PySLAM, Optuna"
+        highlights:
+          - Conducted experimental evaluation of PIXER, a probabilistic feature-selection method for visual odometry.
+          - Collected and curated a custom Davis dataset using a ZED 2i camera and Mosaic X5 GNSS mounted on a Boston Dynamics Spot.
+          - Integrated PIXER outputs into PySLAM and implemented Optuna-driven parallel hyperparameter optimization across six concurrent studies.
+          - Demonstrated 34 percent mean RMSE reduction and 41 to 49 percent keypoint reduction while maintaining or improving accuracy.
+        start_date: 2024
+        end_date: 2025
+
+    Publications:
+      - title: "TERA: A Simulation Environment for Terrain Excavation Robot Autonomy"
+        authors:
+          - Christo Aluckal
+          - et al.
+        publisher: 2025 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)
+        releaseDate: 2025
+        url: https://ieeexplore.ieee.org/document/10979147
+        summary: Palermo, Italy, 2025, pp. 1-6.
+
+      - title: "Splat-by-Splat: Progressive Gaussian Splatting for Efficient Scene Reconstruction"
+        authors:
+          - Christo Aluckal
+          - C. Adhivarahan
+          - K. Dantu
+        publisher: NERC 2025
+        releaseDate: 2025
+        summary: Poster presentation at NERC 2025, Cornell, Ithaca.
+
+      - title: Generative-Network Based Multimedia Super-Resolution for UAV Remote Sensing
+        authors:
+          - Yash Turkar
+          - Christo Aluckal
+          - Shaunak De
+          - Varsha Turkar
+          - Yogesh Agarwadkar
+        publisher: IGARSS 2022
+        releaseDate: 2022
+        url: https://ieeexplore.ieee.org/document/9884486
+        summary: Kuala Lumpur, Malaysia, 2022, pp. 527-530.
+
+      - title: A View-Planning Approach to 3D Reconstruction
+        authors:
+          - Y. Turkar
+          - C. Aluckal
+          - C. Adhivarahan
+          - A. Sebastiani
+          - K. Dantu
+        publisher: International Conference on Extended Reality, Springer
+        releaseDate: 2024
+        summary: pp. 340-350.
+
+      - title: Excavation Autonomy with Resilient Traversability and Handling
+        authors:
+          - Y. Turkar
+          - C. Aluckal
+          - S. Sreedharan
+          - Y. Dighe
+          - Y. Kim
+          - J. Gemerek
+          - K. Dantu
+        publisher: Workshop on Field Robotics (WFR), ICRA 2025
+        releaseDate: 2025
+        url: https://droneslab.github.io/EARTH/
+
+      - title: Learning Visual Information Utility with PIXER
+        authors:
+          - Y. Turkar
+          - T. Chase Jr
+          - C. Aluckal
+          - K. Dantu
+        publisher: arXiv preprint arXiv:2409.13151
+        releaseDate: 2024
+        url: https://arxiv.org/abs/2409.13151
+
+    Skills:
+      - name: Programming Languages
+        keywords:
+          - Python
+          - C
+          - C++
+          - C#
+          - OCaml
+
+      - name: Web Technologies
+        keywords:
+          - HTML
+          - CSS
+          - JavaScript
+          - Bootstrap
+          - Flask
+          - Django
+
+      - name: Data Science and Machine Learning
+        keywords:
+          - NumPy
+          - Pandas
+          - Matplotlib
+          - OpenCV
+          - PyTorch
+          - Keras
+          - TensorFlow
+          - Optuna
+          - WandB
+
+      - name: Specialized Areas
+        keywords:
+          - ROS 1/2
+          - Robotics
+          - Unity
+          - MATLAB
+          - CAD
+          - LaTeX
+          - Metashape
+
+      - name: Research Skills
+        keywords:
+          - Data Collection and Analysis
+          - Literature Review
+          - Academic Writing
+
+      - name: Other Tools and Technologies
+        keywords:
+          - Git
+          - Adobe Photoshop
+          - GIMP
+          - Adobe Premiere
+          - KDENLive
+          - Blender
+
+    Awards:
+      - title: Just Joe Sportsmanship Award
+        awarder: Student Unmanned Aerial Systems Competition
+        date: 2019
+
+      - title: CSE Faculty Choice Award
+        awarder: University at Buffalo
+        date: 2025
 
     References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Dr. Karthik Dantu
+        reference: "Associate Professor, Department of Computer Science and Engineering, School of Engineering and Applied Sciences, University at Buffalo. Email: kdantu@buffalo.edu. Phone: +1-716-645-2670. Relationship: Thesis Advisor, Research Advisor."
