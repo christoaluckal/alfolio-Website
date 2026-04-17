@@ -9,7 +9,7 @@ profile:
   image: christo-profile.jpeg
   image_circular: false
   more_info: >
-    <p>M.S. in Computer and Information Systems</p>
+    <p>Ph.D. in Computer and Information Systems</p>
     <p>University at Buffalo</p>
     <p>DRONESLab research group</p>
 
@@ -25,16 +25,16 @@ latest_posts:
 
 I work at the intersection of robotics, autonomy, and computer vision, with a focus on building systems that are practical outside the lab. My recent work spans simulation for excavation autonomy, 3D scene reconstruction, SLAM with Gaussian Splatting, reinforcement learning, and UAV platforms for field deployment.
 
-I completed my undergraduate degree after more than three years of research experience in UAVs and robotics, interned at [InfiCorridor Solutions Pvt. Ltd.](https://www.inficorridor.in), and went on to pursue a Master of Science in Computer and Information Systems at the [University at Buffalo](https://www.buffalo.edu/). At Buffalo, I worked with the [DRONESLab](https://droneslab.github.io/) research group.
+I completed my undergraduate degree after more than three years of research experience in UAVs and robotics, interned at [InfiCorridor Solutions Pvt. Ltd.](https://www.inficorridor.in), and went on to pursue a Master of Science in Computer and Information Systems at the [University at Buffalo](https://www.buffalo.edu/). At Buffalo, I work with the [DRONESLab](https://droneslab.github.io/) research group as a PhD candidate.
 
 I am broadly interested in robotics and scientific computing, especially problems where perception, planning, and real-world constraints have to meet in the same system.
 
 ## Focus Areas
 
 - Robotics and autonomy
+- SLAM with Gaussian Splatting
 - UAV systems and field robotics
 - Computer vision and 3D reconstruction
-- SLAM with Gaussian Splatting
 - Simulation environments for embodied agents
 - Applied machine learning for control and perception
 
