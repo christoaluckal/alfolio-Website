@@ -73,6 +73,7 @@ cv:
 
     Projects:
       - name: "Master's Thesis: TERA: Simulation Environment for Terrain Excavation Robot Autonomy"
+        url: /projects/tera/
         summary: "Tools: Unity, C#, ROS"
         highlights:
           - Designed TERA, a simulator supporting real-time operation and high-fidelity modeling of autonomous excavators and terrain interaction.
@@ -83,6 +84,7 @@ cv:
         end_date: 2025
 
       - name: "Splat-by-Splat: Progressive Gaussian Splatting for Efficient Scene Reconstruction"
+        url: /projects/splat-by-splat/
         summary: "Tools: Python, PyTorch, CUDA, COLMAP"
         highlights:
           - Proposed an incremental training strategy for 3D Gaussian Splatting to overcome memory and compute limitations of full-dataset training.
