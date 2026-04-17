@@ -2,7 +2,6 @@
 layout: page
 title: Reinforcement Learning Distillation
 description: Online knowledge distillation for multi-environment reinforcement learning.
-img: assets/img/projects/rl-distillation.png
 importance: 3
 related_publications: false
 ---

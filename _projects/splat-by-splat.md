@@ -2,7 +2,7 @@
 layout: page
 title: Splat-by-Splat
 description: Progressive Gaussian Splatting for efficient scene reconstruction.
-img: assets/img/projects/splat-results.png
+img: assets/img/projects/splat-by-splat.jpg
 importance: 1
 github: https://github.com/christoaluckal/gaussian-splatting
 related_publications: false

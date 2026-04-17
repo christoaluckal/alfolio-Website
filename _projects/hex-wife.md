@@ -2,7 +2,7 @@
 layout: page
 title: Hex-Wife
 description: Hex-rotor UAV platform for autonomous point-to-point missions.
-img: assets/img/projects/award.jpeg
+img: assets/img/projects/hex-wife.jpg
 importance: 5
 related_publications: false
 ---
@@ -11,8 +11,8 @@ Hex-Wife was developed as a low-cost autonomous UAV system for reliable point-to
 
 ## Roles
 
-- Design head
-- Communications operator
+- Design Head
+- Communications Operator
 
 ## Outcome
 
