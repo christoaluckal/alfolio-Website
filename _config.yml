@@ -15,7 +15,7 @@ footer_text: >
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
 keywords: robotics, uav, computer vision, simulation, portfolio, research
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://christoaluckal.com
 baseurl: ""
