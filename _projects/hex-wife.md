@@ -2,7 +2,7 @@
 layout: page
 title: Hex-Wife
 description: Hex-rotor UAV platform for autonomous point-to-point missions.
-img: assets/img/projects/hex-wife.png
+img: assets/img/projects/hexwife.jpg
 card_img: assets/img/projects/hex-wife.png
 importance: 5
 pdf: /assets/pdf/mavericks-uas-suas-report.pdf
