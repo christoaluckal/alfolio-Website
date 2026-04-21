@@ -2,7 +2,7 @@
 layout: page
 title: VTOL UAV
 description: Hybrid vertical take-off and landing UAV built for autonomous navigation.
-img: assets/img/projects/vtol-uav.jpg
+img: assets/img/projects/vtol.png
 card_img: assets/img/projects/vtol-uav.jpg
 importance: 4
 pdf: /assets/pdf/vtol-deliverable-2.pdf
