@@ -156,6 +156,13 @@ ul.task-list input[type="checkbox"] {
     text-align: center;
   }
 
+  .card figure picture {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .project-card-row {
     align-items: stretch;
     flex-wrap: nowrap;
