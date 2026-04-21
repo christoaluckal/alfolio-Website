@@ -44,7 +44,7 @@ ul.task-list input[type="checkbox"] {
     width: auto;
     max-width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 360px;
     padding-top: 0;
     margin: 0 auto;
     background-color: var(--global-card-bg-color);
@@ -152,7 +152,7 @@ ul.task-list input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
-    min-height: 300px;
+    min-height: 360px;
     text-align: center;
   }
 
@@ -162,13 +162,19 @@ ul.task-list input[type="checkbox"] {
   }
 
   .project-card-media {
-    flex: 0 0 48%;
-    max-width: 48%;
+    flex: 0 0 56%;
+    max-width: 56%;
   }
 
   .project-card-content {
-    flex: 0 0 52%;
-    max-width: 52%;
+    display: flex;
+    align-items: center;
+    flex: 0 0 44%;
+    max-width: 44%;
+  }
+
+  .project-card-content .card-body {
+    width: 100%;
   }
 
   .col {
