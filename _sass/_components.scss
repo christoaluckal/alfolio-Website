@@ -41,10 +41,12 @@ ul.task-list input[type="checkbox"] {
 
   .card-img,
   .card-img-top {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    max-height: 220px;
+    max-height: 300px;
     padding-top: 0;
+    margin: 0 auto;
     background-color: var(--global-card-bg-color);
   }
 
@@ -150,7 +152,8 @@ ul.task-list input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
-    min-height: 220px;
+    min-height: 300px;
+    text-align: center;
   }
 
   .project-card-row {
@@ -159,13 +162,13 @@ ul.task-list input[type="checkbox"] {
   }
 
   .project-card-media {
-    flex: 0 0 42%;
-    max-width: 42%;
+    flex: 0 0 48%;
+    max-width: 48%;
   }
 
   .project-card-content {
-    flex: 0 0 58%;
-    max-width: 58%;
+    flex: 0 0 52%;
+    max-width: 52%;
   }
 
   .col {
