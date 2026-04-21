@@ -5,7 +5,7 @@
         {% assign project_image = project.card_img | default: 'assets/img/projects/default-project.jpg' %}
         {% if project_image %}
           <div class="project-card-media">
-            {% include figure.liquid loading="eager" path=project_image sizes="(min-width: 768px) 280px, 50vw" alt="project thumbnail" class="card-img" %}
+            {% include figure.liquid loading="eager" path=project_image sizes="(min-width: 768px) 280px, 50vw" alt="project thumbnail" class="card-img" avoid_scaling=true cache_bust=true %}
           </div>
         {% endif %}
         <div class="{% if project_image %}project-card-content{% else %}col-md-12{% endif %}">
