@@ -2,8 +2,8 @@
 layout: page
 title: OpenVINS Gaussian Splatting
 description: Replay-first visual-inertial mapping pipeline for packet-backed 3D Gaussian Splatting.
-img: assets/img/projects/splat-by-splat.jpg
-card_img: assets/img/projects/splat-results.png
+img: assets/img/projects/openvins-gs-architecture.png
+card_img: assets/img/projects/openvins-gs-results.png
 importance: 1
 github: https://github.com/christoaluckal/gaussian-splatting
 related_publications: false
@@ -34,7 +34,7 @@ The pipeline is organized around a stable replay contract:
 
 ## Architecture
 
-{% include figure.liquid loading="eager" path="assets/img/projects/splat-results.png" title="Gaussian Splatting reconstruction output" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-architecture.png" title="Replay-first OpenVINS to Gaussian Splatting architecture" class="img-fluid rounded z-depth-1" %}
 
 The mapper keeps EDGS initialization as a pre-training phase rather than a separate renderer. A normal Gaussian scene is constructed first, then RoMa correspondences are triangulated across selected view pairs and appended to the active Gaussian model. Standard 3DGS optimization proceeds after that initialization step.
 
@@ -44,6 +44,16 @@ This design keeps the integration modular:
 - Packet loading creates camera objects and sparse seeds.
 - EDGS/RoMa adds dense correspondence-based initialization when enabled.
 - The existing training loop handles pruning, densification, rendering, and evaluation.
+
+## Tracking And Scene Partitioning
+
+{% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-openvins-result.png" title="OpenVINS tracking result with trajectory error metrics" class="img-fluid rounded z-depth-1" %}
+
+OpenVINS provides the fixed-pose trajectory used by the packet-backed mapper. The tracking result includes trajectory quality metrics such as RMSE and absolute trajectory error, which are useful for separating estimator quality from mapper quality during later ablations.
+
+{% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-cluster.png" title="Three-subset camera clustering used for scene partitioning experiments" class="img-fluid rounded z-depth-1" %}
+
+The same mapper also preserves the split-scene workflow used in earlier Gaussian Splatting experiments. The clustering visualization shows a three-subset partition, which serves as a practical precedent for later packet-window append blocks.
 
 ## Experiment Modes
 
@@ -55,6 +65,8 @@ The runner supports comparison launches across four main modes:
 - **EDGS + LoD:** correspondence initialization combined with progressive resolution scales.
 
 The current reporting tools collate per-run CSV logs into a compact Markdown and CSV summary. Reports include final quality metrics, final Gaussian count, total training time, peak reserved GPU memory, post-initialization peak GPU memory, and training GPU GB-hours.
+
+{% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-results.png" title="Comparison table for the active reconstruction experiments" class="img-fluid rounded z-depth-1" %}
 
 ## What I Built
 
