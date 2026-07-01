@@ -50,6 +50,11 @@ ninja.data = [{
           description: "XML signature authentication tool built with OpenSSL.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/npnt/";
+            },},{id: "projects-openvins-gaussian-splatting",
+          title: 'OpenVINS Gaussian Splatting',
+          description: "Replay-first visual-inertial mapping pipeline for packet-backed 3D Gaussian Splatting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/openvins-gaussian-splatting/";
             },},{id: "projects-pixtrigger",
           title: 'PixTrigger',
           description: "Camera triggering and geotagging tool for Pixhawk and Raspberry Pi workflows.",
