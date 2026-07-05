@@ -99,6 +99,8 @@ This design keeps the integration modular:
 
 ## Tracking And Scene Partitioning
 
+All results in this section use the [CoalMine environment](https://tartanair.org/environments.html) from TartanAir, an indoor, medium-scale infrastructure scene with six trajectories.
+
 {% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-openvins-result.png" title="OpenVINS tracking result with trajectory error metrics" class="img-fluid rounded z-depth-1" %}
 
 OpenVINS provides the fixed-pose trajectory used by the packet-backed mapper. The tracking result includes trajectory quality metrics such as RMSE and absolute trajectory error, which are useful for separating estimator quality from mapper quality during later ablations.
