@@ -32,6 +32,58 @@ The pipeline is organized around a stable replay contract:
 5. Optional EDGS/RoMa initialization adds triangulated Gaussians from image correspondences before standard optimization.
 6. Training runs vanilla, EDGS-only, LoD-only, or EDGS+LoD variants for comparison.
 
+The OpenVINS export is intentionally easy to consume: each `packets.jsonl` line is a self-contained mapping packet with the image path, calibrated camera model, fixed pose, uncertainty, and sparse feature observations needed by the mapper. A representative packet from the TartanAir export looks like this:
+
+```json
+{
+  "packet_index": 0,
+  "timestamp_sec": 3.099999905,
+  "frame_id": "frame_000000_t3099999905",
+  "body_frame": "imu",
+  "world_frame": "global",
+  "body_to_world": {
+    "q_xyzw": [-0.825834, 0.563895, 0.000001, 0.004486],
+    "p_xyz": [0.273696, -1.930757, 0.028967]
+  },
+  "world_to_body": {
+    "q_xyzw": [0.825834, -0.563895, -0.000001, 0.004486],
+    "p_xyz": [-1.898029, -0.448107, 0.016047]
+  },
+  "images": [
+    {
+      "camera_id": 0,
+      "path": "images/cam0/frame_000000_t3099999905.png",
+      "width": 640,
+      "height": 640
+    }
+  ],
+  "camera_models": [
+    {
+      "camera_id": 0,
+      "model": "radtan",
+      "resolution": [640, 640],
+      "intrinsics": [320, 320, 320, 320],
+      "distortion_coeffs": [0, 0, 0, 0],
+      "camera_to_body": {
+        "q_xyzw": [-0.5, -0.5, -0.5, 0.5],
+        "p_xyz": [0, 0, 0]
+      }
+    }
+  ],
+  "pose_covariance_posori": ["6x6 position/orientation covariance"],
+  "sparse_tracks": [
+    {
+      "feature_id": 4844,
+      "camera_id": 0,
+      "uv": [509.529663, 421.519592],
+      "uv_norm": [0.59228, 0.317249]
+    }
+  ]
+}
+```
+
+Because every packet carries its own pose, intrinsics, image reference, covariance, and feature tracks, the Gaussian Splatting side can build training cameras and sparse seeds directly from OpenVINS output instead of reconstructing a COLMAP directory or joining several sidecar files.
+
 ## Architecture
 
 {% include figure.liquid loading="eager" path="assets/img/projects/openvins-gs-architecture.png" title="Replay-first OpenVINS to Gaussian Splatting architecture" class="img-fluid rounded z-depth-1" %}
