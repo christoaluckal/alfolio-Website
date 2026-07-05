@@ -55,6 +55,129 @@ OpenVINS provides the fixed-pose trajectory used by the packet-backed mapper. Th
 
 The same mapper also preserves the split-scene workflow used in earlier Gaussian Splatting experiments. The clustering visualization shows a three-subset partition, which serves as a practical precedent for later packet-window append blocks.
 
+{% include video.liquid path="assets/video/portfolio_side_by_side_splat_timelapse_4x.mp4" title="Side-by-side reconstruction timelapse comparing non-clustering and clustering runs" caption="Side-by-side reconstruction timelapse: non-clustering run on the left, clustering run on the right." class="img-fluid rounded z-depth-1" controls=true muted=true %}
+
+Both portfolio runs completed 50,000 training iterations and final evaluation at iteration 50,000. Clustering keeps image quality effectively unchanged while cutting the final Gaussian count by 50.1% and end-to-end runtime by 21.6%.
+
+<style>
+  .openvins-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .openvins-result-panel {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    padding: 1rem;
+    background: var(--global-bg-color);
+  }
+
+  .openvins-result-panel h4 {
+    font-size: 1rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .openvins-result-row {
+    display: grid;
+    grid-template-columns: minmax(7.5rem, 10rem) 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    margin: 0.6rem 0;
+  }
+
+  .openvins-result-label {
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  .openvins-result-value {
+    display: block;
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    margin-top: 0.15rem;
+  }
+
+  .openvins-result-track {
+    height: 0.8rem;
+    background: var(--global-code-bg-color);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .openvins-result-bar {
+    height: 100%;
+    border-radius: inherit;
+  }
+
+  .openvins-result-bar.no-clustering {
+    background: #3b82f6;
+  }
+
+  .openvins-result-bar.with-clustering {
+    background: #f97316;
+  }
+
+  @media (max-width: 768px) {
+    .openvins-results-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="openvins-results-grid" aria-label="Portfolio clustering comparison histograms">
+  <section class="openvins-result-panel">
+    <h4>Final eval L1 <small>(lower is better)</small></h4>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">No clustering<span class="openvins-result-value">0.0324027</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar no-clustering" style="width: 99.4%"></div></div>
+    </div>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">With clustering<span class="openvins-result-value">0.0326058</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar with-clustering" style="width: 100%"></div></div>
+    </div>
+  </section>
+
+  <section class="openvins-result-panel">
+    <h4>Final eval PSNR <small>(higher is better)</small></h4>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">No clustering<span class="openvins-result-value">26.1512 dB</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar no-clustering" style="width: 99.9%"></div></div>
+    </div>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">With clustering<span class="openvins-result-value">26.1764 dB</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar with-clustering" style="width: 100%"></div></div>
+    </div>
+  </section>
+
+  <section class="openvins-result-panel">
+    <h4>Final num Gaussians <small>(lower is leaner)</small></h4>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">No clustering<span class="openvins-result-value">569,805</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar no-clustering" style="width: 100%"></div></div>
+    </div>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">With clustering<span class="openvins-result-value">284,401</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar with-clustering" style="width: 49.9%"></div></div>
+    </div>
+  </section>
+
+  <section class="openvins-result-panel">
+    <h4>End-to-end time <small>(lower is faster)</small></h4>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">No clustering<span class="openvins-result-value">1,947.7 s</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar no-clustering" style="width: 100%"></div></div>
+    </div>
+    <div class="openvins-result-row">
+      <div class="openvins-result-label">With clustering<span class="openvins-result-value">1,527.3 s</span></div>
+      <div class="openvins-result-track"><div class="openvins-result-bar with-clustering" style="width: 78.4%"></div></div>
+    </div>
+  </section>
+</div>
+
+The baseline run was `portfolio_no_clustering_r2_c3_split10000_iter50000`; the clustered run was `portfolio_clustered_r2_c3_split10000_iter50000`. Both runs completed successfully, so the comparison isolates the clustering effect rather than early stopping or failed evaluation.
+
 ## Experiment Modes
 
 The runner supports comparison launches across four main modes:
